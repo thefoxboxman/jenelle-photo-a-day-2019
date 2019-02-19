@@ -86,6 +86,7 @@ const BannerWapper = styled.div`
 	font-size:1.5rem;
 	margin: 1rem;
 	letter-spacing: 0.1rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 `
 
@@ -98,7 +99,7 @@ const DisplayWrapper = styled.div`
 	#text {grid-area:text;  }
 
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 1fr 20fr 1fr 1fr;
 	grid-template-rows: auto;
 	grid-gap: 10px;
 	background-color: black;
@@ -106,27 +107,31 @@ const DisplayWrapper = styled.div`
 
 		grid-template-areas: 
 	
-	" . title     . "
-	" . image   . "
-	" . text  . ";
+	" . . title     . . "
+	" . image image  image . "
+	" . . text  . . ";
 
 	#title{
+		color: hsla(0, 22%, 93%, 1.0);
 margin:0.5rem 0 0;
 text-align: center;
 text-transform: capitalize;
 font-size: 0.8rem;
 letter-spacing:0.1rem;
 line-height: 0.9rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
 	}
 
 	#image{
 
 	}
 #text{
+	color: hsla(0, 22%, 93%, 0.8);
 	margin: 0.5rem 0;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	letter-spacing: 0.1rem;
 	line-height: 0.9rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
