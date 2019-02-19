@@ -5,27 +5,29 @@ import { graphql } from "gatsby";
 
 
 export const query = graphql`
-  {
-    allSanityPost {
-      edges {
-        node {
-          id
-          title
-          _rawBody
-          slug {
-            current
-          }
-          mainImage {
-            asset {
-              fluid {
-                ...GatsbySanityImageFluid
-              }
-            }
-          }
-        }
+ {
+  allSanityPost{
+		edges{
+			node{
+		
+    _id
+    title
+		description
+		publishedAt
+		slug{
+			current
+		}
+    mainImage{
+      asset{
+				fluid{
+				...GatsbySanityImageFluid
+				}
       }
     }
   }
+}
+}
+}
 `;
 
 const IndexPage = ({ data }) => (
@@ -34,7 +36,7 @@ const IndexPage = ({ data }) => (
 			listStyle: "none",
 	}}>
       {data.allSanityPost.edges.map(({ node: post }) => (
-        <li key={post.slug.current}>
+        <li key={post.publishedAt}>
 					<h2 style={{
 						textAlign: "center",
 						
@@ -44,6 +46,7 @@ const IndexPage = ({ data }) => (
 						margin: '2rem'
 					}}>{post.title}</h2>
           <Image fluid={post.mainImage.asset.fluid} alt={post.title} />
+					
         </li>
       ))}
     </ul>
