@@ -1,16 +1,53 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import Image from "gatsby-image";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
 
-import Layout from "../components/layout"
 
-import SEO from "../components/seo"
+export const query = graphql`
+  {
+    allSanityPost {
+      edges {
+        node {
+          id
+          title
+          _rawBody
+          slug {
+            current
+          }
+          mainImage {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Jenelle's Photo A Day</h1>
-    
+    <ul style={{
+			listStyle: "none",
+	}}>
+      {data.allSanityPost.edges.map(({ node: post }) => (
+        <li key={post.slug.current}>
+					<h2 style={{
+						textAlign: "center",
+						
+						flex: '1 45%',
+						flexWrap: 'wrap',
+						maxWidth: '45%',
+						margin: '2rem'
+					}}>{post.title}</h2>
+          <Image fluid={post.mainImage.asset.fluid} alt={post.title} />
+        </li>
+      ))}
+    </ul>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

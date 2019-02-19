@@ -8,6 +8,9 @@ Setup for blog using Sanity.io
 6  check .gitignore (add ignore node modules)
 7. git init
 
+8. gatsby source "https://github.com/jlengstorf/sanity-gatsby-portfolio"
+9. sanity cms source "https://github.com/jlengstorf/sanity-gatsby-studio"
+
 
 
 
