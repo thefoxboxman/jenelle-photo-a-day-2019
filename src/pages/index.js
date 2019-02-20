@@ -80,6 +80,8 @@ const IndexPage = ({ data }) => (
 
 export default IndexPage;
 
+/* CSS in JS Style Components */
+
 const BannerWapper = styled.div`
 #banner {
 	text-align: center;
@@ -88,7 +90,7 @@ const BannerWapper = styled.div`
 	letter-spacing: 0.1rem;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-`
+`  /* end BannerWrapper */
 
 const DisplayWrapper = styled.div`
 #container{
@@ -136,4 +138,4 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 }
-`
+` /* end DisplayWrapper */
