@@ -20,6 +20,10 @@ section,
 summary {
   display: block;
 }
+
+footer{
+	margin: 2rem;
+}
 audio,
 canvas,
 progress,
@@ -43,7 +47,9 @@ a {
 }
 a:active,
 a:hover {
-  outline-width: 0;
+	outline-width: 0;
+	font-size: 1.25rem;
+
 }
 abbr[title] {
   border-bottom: none;
@@ -332,7 +338,7 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;

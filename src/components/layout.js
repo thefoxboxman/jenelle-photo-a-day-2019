@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
           <footer>
             © {new Date().getFullYear()}, Built by John De Costa,  "Head Web Wrangler" at  
             {` `}
-            <a href="https://eaglefox-site.netlify.com">Eaglefox</a>
+            <a href="https://eaglefox-site.netlify.com">... Eaglefox</a>
           </footer>
         </div>
       </>
