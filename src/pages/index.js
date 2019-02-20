@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => (
 			<h1 id="banner">Jenelle's Photo A Day</h1>
 		</BannerWapper>
 		<ul style={{ listStyle: "none" }} >
-			{data.allSanityPost.edges.map(({ node: post }) => (
+			{data.allSanityPost.edges.reverse().map(({ node: post }) => (
 				<li key={post.publishedAt}>
 					{/*		<h2 style={{
 						textAlign: "center",
