@@ -6,30 +6,29 @@ import styled from 'styled-components';
 
 
 export const query = graphql`
- {
-  allSanityPost{
-		edges{
-			node{
-		
-    _id
-    title
-		description
-		publishedAt
-		slug{
-			current
-		}
-    mainImage{
-      asset{
-				fluid{
-				...GatsbySanityImageFluid
-				}
-      }
-    }
-  }
-}
-}
-}
-`;
+         {
+           allSanityPost(sort: { fields: [publishedAt], order: DESC }) {
+             edges {
+               node {
+                 _id
+                 title
+                 description
+                 publishedAt
+                 slug {
+                   current
+                 }
+                 mainImage {
+                   asset {
+                     fluid {
+                       ...GatsbySanityImageFluid
+                     }
+                   }
+                 }
+               }
+             }
+           }
+         }
+       `;
 
 const IndexPage = ({ data }) => (
 	<Layout>
