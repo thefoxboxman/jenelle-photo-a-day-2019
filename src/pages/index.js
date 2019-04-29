@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 export const query = graphql`
          {
-           allSanityPost(sort: { fields: [publishedAt], order: [DESC] }) {
+           allSanityPost(sort: { fields: [publishedAt], order: [DESC]}, limit: 30) {
              edges {
                node {
                  _id
@@ -115,9 +115,10 @@ const DisplayWrapper = styled.div`
 	#title{
 		color: hsla(0, 22%, 93%, 1.0);
 margin:0.5rem 0 0;
+padding-top: 2.0rem;
 text-align: center;
 text-transform: capitalize;
-font-size: 0.8rem;
+font-size: 1.0rem;
 letter-spacing:0.1rem;
 line-height: 0.9rem;
 font-family: Georgia, 'Times New Roman', Times, serif;
