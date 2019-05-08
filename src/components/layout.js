@@ -1,41 +1,24 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
 
-//import Header from "./header"
-import "./layout.css"
+import "./layout.css";
+import Navbar from "../components/globals/navbar/Navbar";
+import Footer from "../components/globals/footer/Footer";
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-				{/* disable header
-				<Header siteTitle={data.site.siteMetadata.title} /> 
-				*/}
-        <div> 
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built by John De Costa,  "Head Web Wrangler" at  
-            {` `}
-            <a href="https://eaglefox-site.netlify.com">... Eaglefox</a>
-          </footer>
-        </div>
-      </>
-    )}
-  />
-)
+const Layout = ({ children }) => {
+  return (
+    <>
+      <div>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </>
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

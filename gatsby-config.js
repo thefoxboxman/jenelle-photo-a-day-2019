@@ -5,7 +5,8 @@ module.exports = {
     author: `John De Costa`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
