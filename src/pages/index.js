@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 export const query = graphql`
          {
-           allSanityPost(sort: { fields: [publishedAt], order: [DESC]}, limit: 10) {
+           allSanityPost(sort: { fields: [publishedAt], order: [DESC]}, limit: 50) {
              edges {
                node {
                  _id

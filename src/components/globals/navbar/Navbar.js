@@ -17,7 +17,7 @@ const Navbar = () => {
   // };
   return (
     <NavWrapper>
-      <nav>
+      <nav className="navbar">
         <ul>
           <li>
             <Link to="/" className="nav-link">
@@ -25,8 +25,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/page-2" className="nav-link">
-              Page 2
+            <Link to="/next-fifty" className="nav-link">
+              next 50
             </Link>
           </li>
         </ul>
@@ -39,23 +39,30 @@ export default Navbar;
 
 //style the navbar with media query
 const NavWrapper = styled.div`
+  .navbar {
+    
+    padding-top: 15px;
+    border-bottom: solid 0.1rem white;
+    
+  }
   ul {
     display: flex;
     list-style-type: none;
     margin: 0 auto;
-    padding: 0.8rem;
+    padding: 0;
     justify-content: center;
+    align-items: center;
   }
 
   .nav-link {
     text-decoration: none;
     color: white;
-    
+
     border: solid 0.1rem white;
     border-radius: 0.3rem;
     font-size: 0.9rem;
-    padding: 0.3rem 0.5rem;
-    margin: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    margin: 1rem;
     text-transform: capitalize;
   }
   .nav-link:hover {
