@@ -40,10 +40,9 @@ export default Navbar;
 //style the navbar with media query
 const NavWrapper = styled.div`
   .navbar {
-    
     padding-top: 15px;
+    border-top: solid 0.1rem white;
     border-bottom: solid 0.1rem white;
-    
   }
   ul {
     display: flex;
