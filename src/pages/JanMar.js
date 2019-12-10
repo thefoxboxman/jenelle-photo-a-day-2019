@@ -8,7 +8,7 @@ export const query = graphql`
 	{
 		allSanityPost(
 			sort: { fields: [publishedAt], order: [ASC] }
-			skip: 275
+
 			limit: 90
 		) {
 			edges {
@@ -37,7 +37,7 @@ const JanMarch = ({ data }) => (
 	<Layout>
 		<BannerWapper>
 			<h1 id="banner">Jenelle's Photo A Day</h1>
-			<h1 id="banner">January - March</h1>
+			<h1 id="banner">January - March 2019</h1>
 		</BannerWapper>
 
 		<ul className="myUl">
