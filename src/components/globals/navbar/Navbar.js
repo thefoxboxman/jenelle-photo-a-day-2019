@@ -35,7 +35,7 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/next-fifty" className="nav-link">
+						<Link to="/JulySept" className="nav-link">
 							July-Sept
 						</Link>
 					</li>

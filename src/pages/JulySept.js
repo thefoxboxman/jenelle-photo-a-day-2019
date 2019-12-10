@@ -33,7 +33,7 @@ export const query = graphql`
 	}
 `;
 
-const NextFifty = ({ data }) => (
+const JulySept = ({ data }) => (
 	<Layout>
 		<BannerWapper>
 			<h1 id="banner">Jenelle's Photo A Day</h1>
@@ -59,7 +59,7 @@ const NextFifty = ({ data }) => (
 	</Layout>
 );
 
-export default NextFifty;
+export default JulySept;
 
 /* CSS in JS Style Components */
 
