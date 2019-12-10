@@ -33,10 +33,11 @@ const IndexPage = ({ data }) => (
 	<Layout>
 		<BannerWapper>
 			<h1 id="banner">Jenelle's Photo A Day</h1>
+			<SubTitleWapper>
+				<h2 id="subtitle">One photo for each day of 2019</h2>
+			</SubTitleWapper>
 		</BannerWapper>
-		<SubTitleWapper>
-			<h2 id="subtitle">One photo for each day of 2019</h2>
-		</SubTitleWapper>
+
 		<ul style={{ listStyle: "none" }}>
 			{data.allSanityPost.edges.map(({ node: post }) => (
 				<li key={post._id}>

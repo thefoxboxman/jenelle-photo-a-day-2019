@@ -7,7 +7,7 @@ import styled from "styled-components";
 export const query = graphql`
 	{
 		allSanityPost(
-			sort: { fields: [publishedAt], order: [DESC] }
+			sort: { fields: [publishedAt], order: [ASC] }
 			skip: 275
 			limit: 90
 		) {
