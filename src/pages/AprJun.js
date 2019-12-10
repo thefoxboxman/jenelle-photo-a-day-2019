@@ -8,7 +8,7 @@ export const query = graphql`
 	{
 		allSanityPost(
 			sort: { fields: [publishedAt], order: [ASC] }
-			skip: 184
+			skip: 90
 			limit: 91
 		) {
 			edges {
