@@ -25,8 +25,13 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/OctDec" className="nav-link">
-							Oct-Dec
+						<Link to="/JanMar" className="nav-link">
+							Jan-March
+						</Link>
+					</li>
+					<li>
+						<Link to="/AprJun" className="nav-link">
+							April-June
 						</Link>
 					</li>
 					<li>
@@ -35,8 +40,8 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/AprJun" className="nav-link">
-							April-June
+						<Link to="/OctDec" className="nav-link">
+							Oct-Dec
 						</Link>
 					</li>
 				</ul>
