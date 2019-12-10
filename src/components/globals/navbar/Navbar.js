@@ -34,6 +34,11 @@ const Navbar = () => {
 							July-Sept
 						</Link>
 					</li>
+					<li>
+						<Link to="/AprJun" className="nav-link">
+							April-June
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</NavWrapper>
