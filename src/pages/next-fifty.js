@@ -36,6 +36,7 @@ export const query = graphql`
 const NextFifty = ({ data }) => (
 	<Layout>
 		<BannerWapper>
+			<h1 id="banner">Jenelle's Photo A Day</h1>
 			<h1 id="banner">July - Sept</h1>
 		</BannerWapper>
 

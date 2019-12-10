@@ -21,6 +21,11 @@ const Navbar = () => {
 				<ul>
 					<li>
 						<Link to="/" className="nav-link">
+							Home
+						</Link>
+					</li>
+					<li>
+						<Link to="/" className="nav-link">
 							Oct-Dec
 						</Link>
 					</li>
