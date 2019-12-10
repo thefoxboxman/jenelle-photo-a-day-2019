@@ -25,7 +25,7 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/" className="nav-link">
+						<Link to="/OctDec" className="nav-link">
 							Oct-Dec
 						</Link>
 					</li>
