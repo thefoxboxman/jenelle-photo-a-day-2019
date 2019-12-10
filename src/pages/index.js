@@ -13,7 +13,6 @@ export const query = graphql`
 					title
 					description
 					publishedAt
-					bob
 					slug {
 						current
 					}
