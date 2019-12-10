@@ -37,7 +37,7 @@ const JulySept = ({ data }) => (
 	<Layout>
 		<BannerWapper>
 			<h1 id="banner">Jenelle's Photo A Day</h1>
-			<h1 id="banner">July - Sept</h1>
+			<h1 id="banner">July - Sept 2019</h1>
 		</BannerWapper>
 
 		<ul className="myUl">
