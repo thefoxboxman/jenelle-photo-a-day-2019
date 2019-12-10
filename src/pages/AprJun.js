@@ -50,7 +50,9 @@ const AprilJune = ({ data }) => (
 							<div id="image">
 								<Image fluid={post.mainImage.asset.fluid} alt={post.title} />
 							</div>
-							<div id="text">{post.description}</div>
+							<div id="text">
+								{post.description}................{post.publishedAt}
+							</div>
 						</div>
 					</DisplayWrapper>
 				</li>

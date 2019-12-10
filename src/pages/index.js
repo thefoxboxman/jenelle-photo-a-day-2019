@@ -59,7 +59,7 @@ const IndexPage = ({ data }) => (
 								<Image fluid={post.mainImage.asset.fluid} alt={post.title} />
 							</div>
 							<div id="text">
-								{post.description}......{post.publishedAt}
+								{post.description}................{post.publishedAt}
 							</div>
 						</div>
 					</DisplayWrapper>
