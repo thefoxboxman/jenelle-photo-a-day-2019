@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => (
 			<h1 id="banner">Jenelle's Photo A Day</h1>
 		</BannerWapper>
 		<SubTitleWapper>
-			<h2 id="subtitle">One photo taken each day through 2019</h2>
+			<h2 id="subtitle">One photo for each day of 2019</h2>
 		</SubTitleWapper>
 		<ul style={{ listStyle: "none" }}>
 			{data.allSanityPost.edges.map(({ node: post }) => (
