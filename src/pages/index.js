@@ -13,6 +13,7 @@ export const query = graphql`
 					title
 					description
 					publishedAt
+					bob
 					slug {
 						current
 					}
@@ -33,9 +34,7 @@ const IndexPage = ({ data }) => (
 	<Layout>
 		<BannerWapper>
 			<h1 id="banner">Jenelle's Photo A Day</h1>
-			<SubTitleWapper>
-				<h2 id="subtitle">One photo for each day of 2019</h2>
-			</SubTitleWapper>
+			<h1 id="banner">One photo for each day of 2019</h1>
 		</BannerWapper>
 
 		<ul style={{ listStyle: "none" }}>
@@ -60,7 +59,9 @@ const IndexPage = ({ data }) => (
 							<div id="image">
 								<Image fluid={post.mainImage.asset.fluid} alt={post.title} />
 							</div>
-							<div id="text">{post.description}</div>
+							<div id="text">
+								{post.description}..........{publishedAt}
+							</div>
 						</div>
 					</DisplayWrapper>
 				</li>
@@ -77,16 +78,6 @@ const BannerWapper = styled.div`
 	#banner {
 		text-align: center;
 		font-size: 1.5rem;
-		margin: 1rem;
-		letter-spacing: 0.1rem;
-		font-family: Georgia, "Times New Roman", Times, serif;
-	}
-`; /* end BannerWrapper */
-
-const SubTitleWapper = styled.div`
-	#subtitle {
-		text-align: center;
-		font-size: 1.1rem;
 		margin: 1rem;
 		letter-spacing: 0.1rem;
 		font-family: Georgia, "Times New Roman", Times, serif;
