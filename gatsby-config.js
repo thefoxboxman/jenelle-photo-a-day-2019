@@ -5,8 +5,10 @@ module.exports = {
     author: `John De Costa`,
   },
   plugins: [
-		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,15 +16,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    
-		{
-			resolve: 'gatsby-source-sanity',
-			options: {
-				projectId: 'j4wskw2e',
-				dataset: 'production',
-			
-			}
-		},
+
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "j4wskw2e",
+        dataset: "production",
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
